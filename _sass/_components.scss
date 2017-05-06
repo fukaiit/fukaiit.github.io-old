@@ -5,13 +5,16 @@ pre {
     /*border-left: $spacer-1 solid $color-border;*/
     margin: $spacer-1 0;
     padding-left: 16px;
-    width: (9 / 12 * 100%); // matches col-9
-    overflow: hidden;
+    /*width: (9 / 12 * 100%); // matches col-9*/
+    width:100%;
+    overflow-x: auto;
+    overflow-y: hidden;
     font-family: Menlo,Monaco,Consolas,Courier New,monospace;
     border: 1px solid #CCCCCC;
     background-color: #F6F6F6; 
     font-size: $body-font-size;
     border-radius: 5px;
+
 }
 
 code {
@@ -22,6 +25,8 @@ code {
     background-color: #F6F6F6; 
     border-radius: 3px;
     font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+
+    word-wrap: break-word;
 }
 
 pre > code{

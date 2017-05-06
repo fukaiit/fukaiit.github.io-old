@@ -9,6 +9,7 @@ That is all you need to know.
 
 ### Contact me:
 * Email:  {{ site.email }}
+* QQ：{{site.qq}}
 
 
 #### 暂留问题：

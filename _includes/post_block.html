@@ -3,11 +3,15 @@
   <a class="no-underline h5 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">
   	{{ post.date | date: "%Y-%m-%d" }}
   </a>
-  <h2 class="h1 lh-condensed col-9 mt-0">
+  <h2 class="h2 lh-condensed col-9 mt-0">
     <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	  <span class="cates-span">编码/CODE</span>
   </h2>
 
-  <!-- <p>{{ post.content | strip_html | truncatewords:30 }}</p> -->
-  <p>{{ post.excerpt }}</p>
+  <p class="post-excerpt">{{ post.content | strip_html | slice:0,200 }}……<a class="no-underline  text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">
+  	阅读全文
+  </a>
+  </p>
+  
+  <!-- <p>{{ post.excerpt }}</p> -->
 </div>
