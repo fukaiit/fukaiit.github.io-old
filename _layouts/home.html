@@ -8,8 +8,14 @@
     <div>
 
       <header class="header-background">
+        <!-- topbar开始 -->
+        <div class="clearfix border-bottom-thick header-border">
+          <div class="left sm-width-full py-1 mt-1 mt-lg-0 px-2">
+            <a class="align-middle link-primary text-accent" href="{{ site.baseurl }}/">
+              {{ site.title }}
+            </a>
+          </div>
 
-        <div class="clearfix border-bottom-thick header-border absolute-header" style="background-color: #181818">
           <ul class="list-reset right py-1 header-text font-smoothing">
             {% for my_page in site.pages %}
               {% if my_page.title %}
@@ -20,8 +26,9 @@
             {% endfor %}
           </ul>
         </div>
-
-        <div class="container mx-auto px-2 mb-2 clearfix header-text margin-top-44">
+        <!-- topbar结束 -->
+        <!-- 头部深色区域开始 -->
+        <div class="container mx-auto px-2 mb-2 clearfix header-text">
           <h1 class="h0 inline-block col-12 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1>
 
           <div class="clearfix mb-4 py-1">
@@ -41,19 +48,18 @@
               <p class="h4 lh-condensed font-smoothing mt-2 py-1">Life's simple.You make choices and you don't look back！
               <p>--The Fast and the Furious: Tokyo Drift</p></p>
             </div>
-
-
           </div>
-
         </div>
+        <!-- 头部深色区域结束 -->
       </header>
-  
+    
+      <!-- 博文主体部分开始 -->
       <div class="container mx-auto px-2 py-4">
         {% for post in site.posts %}
           {% include post_block.html %}
         {% endfor %}
       </div>
-
+      <!-- 博文主体部分结束 -->
     </div>
 
     {% include footer.html %}

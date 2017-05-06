@@ -24,9 +24,16 @@ github_username: fukaiit
 # theme: jekyll-swiss
 # Build settings
 markdown: kramdown
-
+kramdown:
+  input: GFM
+#可以给 Kramdown 传递值为 “GFM” 的 input 选项，从而启用 Github 扩展的 Markdown 语法。
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+permalink: pretty
+highlighter: pygments
+# markdown: redcarpet
+# redcarpet:
+#     extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]

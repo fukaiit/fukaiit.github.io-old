@@ -9,13 +9,32 @@
 ;
 
 
-.absolute-header{
-	position: fixed;
-	top:0;
-	left: 0;
-	width: 100%;
+.main-color{
+	color:#E74727;
 }
 
-.margin-top-44{
-	margin-top:44px;
+ul.cates{
+	display: inline;
+	list-style-type: none;
+	li{
+		display: inline-block;
+		font-size: 16px;
+		background-color: #E74727;
+		color:#FFF;
+		border-radius: 4px;
+		padding: 4px 12px; 
+	}	
+}
+
+.cates-span{
+		display: inline-block;
+		font-size: 16px;
+		background-color: #E74727;
+		color:#FFF;
+		border-radius: 4px;
+		padding: 4px 12px; 
+}
+
+.post-content a{
+		color: #0366D6;
 }

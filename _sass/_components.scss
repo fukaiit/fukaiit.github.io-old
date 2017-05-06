@@ -2,17 +2,30 @@
 
 // Code formatting
 pre {
-    border-left: $spacer-1 solid $color-border;
-    margin: $spacer-3 0;
+    /*border-left: $spacer-1 solid $color-border;*/
+    margin: $spacer-1 0;
     padding-left: 16px;
     width: (9 / 12 * 100%); // matches col-9
-    overflow-x: auto;
+    overflow: hidden;
+    font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+    border: 1px solid #CCCCCC;
+    background-color: #F6F6F6; 
+    font-size: $body-font-size;
+    border-radius: 5px;
 }
 
 code {
     color: $color-code;
     font-size: $body-font-size;
-    padding: 1px 4px;
+    padding: 5px 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #F6F6F6; 
+    border-radius: 3px;
+    font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+}
+
+pre > code{
+    border: none;
 }
 
 
